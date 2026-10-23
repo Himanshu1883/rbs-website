@@ -1,26 +1,187 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-pink: #e6007e;
+  --color-gold: #c9a24b;
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-cream: #f7f3ee;
+  --font-sans: var(--font-outfit);
+  --font-display: var(--font-cormorant);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --bg: #fffbfa;
+  --bg-2: #ffffff;
+  --fg: #1a1216;
+  --muted: #6b5e66;
+  --line: rgba(26, 18, 22, 0.1);
+  --overlay: rgba(255, 251, 250, 0.82);
+}
+
+.dark {
+  --bg: #070707;
+  --bg-2: #111111;
+  --fg: #f7f3ee;
+  --muted: #b8aea6;
+  --line: rgba(247, 243, 238, 0.1);
+  --overlay: rgba(7, 7, 7, 0.78);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #e6007e;
+  color: white;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a24b, transparent);
+}
+
+@keyframes kenburns-a {
+  0% {
+    transform: scale(1.08) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.2) translate3d(-2.4%, -1.6%, 0);
+  }
+}
+
+@keyframes kenburns-b {
+  0% {
+    transform: scale(1.12) translate3d(1.2%, 0, 0);
+  }
+  100% {
+    transform: scale(1.22) translate3d(-1.4%, 1.8%, 0);
+  }
+}
+
+@keyframes kenburns-c {
+  0% {
+    transform: scale(1.1) translate3d(0, 1%, 0);
+  }
+  100% {
+    transform: scale(1.18) translate3d(1.8%, -1.4%, 0);
+  }
+}
+
+.kenburns-a {
+  animation: kenburns-a 22s ease-in-out infinite alternate;
+}
+
+.kenburns-b {
+  animation: kenburns-b 26s ease-in-out infinite alternate;
+}
+
+.kenburns-c {
+  animation: kenburns-c 24s ease-in-out infinite alternate;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 36s linear infinite;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 22s linear infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.9s ease both;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-2%, -1%);
+  }
+  30% {
+    transform: translate(1%, 2%);
+  }
+  50% {
+    transform: translate(-1%, 1%);
+  }
+  70% {
+    transform: translate(2%, -2%);
+  }
+  90% {
+    transform: translate(-1%, 2%);
+  }
+}
+
+.film-grain::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: -20%;
+  opacity: 0.07;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+  animation: grain 8s steps(4) infinite;
+}
+
+.pink-gradient {
+  background: linear-gradient(135deg, #e6007e 0%, #9b004f 55%, #1a1216 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
