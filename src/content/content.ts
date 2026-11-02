@@ -2,24 +2,42 @@ import type { StaticImageData } from "next/image";
 
 import bridalChandelier from "@/assets/images/bridal-red-chandelier.jpg";
 import bridalPaisley from "@/assets/images/bridal-red-paisley.jpg";
+import bridalNeonSign from "@/assets/images/bridal-neon-sign.jpg";
+import bridalPinkBraid from "@/assets/images/bridal-pink-braid.jpg";
+import bridalOutdoorMaroon from "@/assets/images/bridal-outdoor-maroon.jpg";
+import bridalYellowHenna from "@/assets/images/bridal-yellow-henna.jpg";
+import bridalMaroonLilies from "@/assets/images/bridal-maroon-lilies.jpg";
+import bridalYellowWithRachna from "@/assets/images/bridal-yellow-with-rachna.jpg";
 import partyChinHand from "@/assets/images/party-orange-chin-hand.jpg";
 import partyEarring from "@/assets/images/party-orange-earring.jpg";
+import partySilverGown from "@/assets/images/party-silver-gown.jpg";
+import partyPinkEmerald from "@/assets/images/party-pink-emerald.jpg";
+import hairOmbreSalon from "@/assets/images/hair-ombre-salon.jpg";
+import hairGoldBraid from "@/assets/images/hair-gold-braid.jpg";
+import hairAuburnCurls from "@/assets/images/hair-auburn-curls.jpg";
+import mensGroomingChair from "@/assets/images/mens-grooming-chair.jpg";
 import ownerPortrait from "@/assets/images/owner-rachna-portrait.jpg";
 import ownerFull from "@/assets/images/owner-rachna-full.jpg";
+import ownerLogoWall from "@/assets/images/owner-rachna-logo-wall.jpg";
 import studioLogoWall from "@/assets/images/studio-working-logo-wall.jpeg";
 import studioMirror from "@/assets/images/studio-working-mirror.jpeg";
 import studioGlamorous from "@/assets/images/studio-glamorous-moments.jpg";
+import studioMakeupSession from "@/assets/images/studio-makeup-session.jpg";
+import studioGaneshBlessing from "@/assets/images/studio-ganesh-blessing.jpg";
+import sittingConsult from "@/assets/images/sitting-consult.jpg";
+import sittingTrial from "@/assets/images/sitting-trial.jpg";
+import sittingTheDay from "@/assets/images/sitting-the-day.jpg";
+import heroStudioEnsemble from "@/assets/images/hero-studio-ensemble.jpg";
+import heroStudioLineup from "@/assets/images/hero-studio-lineup.jpg";
+import beforeBridalBraid from "@/assets/images/before-bridal-braid.jpg";
+import afterBridalBraid from "@/assets/images/after-bridal-braid.jpg";
+import beforeBridalMaroon from "@/assets/images/before-bridal-maroon.jpg";
+import afterBridalMaroon from "@/assets/images/after-bridal-maroon.jpg";
+import beforePartyEmerald from "@/assets/images/before-party-emerald.jpg";
+import afterPartyEmerald from "@/assets/images/after-party-emerald.jpg";
+import beforePartySilver from "@/assets/images/before-party-silver.jpg";
+import afterPartySilver from "@/assets/images/after-party-silver.jpg";
 import logoSource from "@/assets/images/logo-source.jpeg";
-
-import stockHairStyling from "@/assets/stock/hair-styling.webp";
-import stockSalonInterior from "@/assets/stock/salon-interior.webp";
-import stockHairWash from "@/assets/stock/hair-wash.webp";
-import stockMensGrooming from "@/assets/stock/mens-grooming.webp";
-import stockMakeupBrushes from "@/assets/stock/makeup-brushes.webp";
-import stockMakeupProducts from "@/assets/stock/makeup-products.webp";
-import stockHairColor from "@/assets/stock/hair-color.webp";
-import stockHairSalonCut from "@/assets/stock/hair-salon-cut.webp";
-import stockBrideUpdo from "@/assets/stock/bride-updo.webp";
 
 export type SiteImage = {
   src: StaticImageData;
@@ -65,6 +83,36 @@ export const images: Record<string, SiteImage> = {
     alt: "Bridal makeup with golden shimmer eyes and red lehenga",
     objectPosition: "50% 18%",
   },
+  bridalNeonSign: {
+    src: bridalNeonSign,
+    alt: "Bride in a yellow dupatta and embroidered lehenga in front of the RBS Make-Over neon sign",
+    objectPosition: "50% 12%",
+  },
+  bridalPinkBraid: {
+    src: bridalPinkBraid,
+    alt: "Bridal makeup with a gold-wrapped braid, nath and polki jewellery in a pink embroidered lehenga",
+    objectPosition: "50% 12%",
+  },
+  bridalOutdoorMaroon: {
+    src: bridalOutdoorMaroon,
+    alt: "Outdoor bridal portrait in maroon dupatta with kundan jewellery and red chooda",
+    objectPosition: "50% 16%",
+  },
+  bridalYellowHenna: {
+    src: bridalYellowHenna,
+    alt: "Bride in yellow dupatta with hennaed hands, nath and emerald jewellery",
+    objectPosition: "50% 18%",
+  },
+  bridalMaroonLilies: {
+    src: bridalMaroonLilies,
+    alt: "Bridal makeup in maroon and gold with polki jewellery beside white lilies",
+    objectPosition: "50% 18%",
+  },
+  bridalYellowWithRachna: {
+    src: bridalYellowWithRachna,
+    alt: "Rachna Bhardwaj with a bride in a yellow dupatta and embroidered lehenga",
+    objectPosition: "50% 18%",
+  },
   partyChinHand: {
     src: partyChinHand,
     alt: "Party makeup look with orange lehenga and pearl jewellery",
@@ -73,6 +121,36 @@ export const images: Record<string, SiteImage> = {
   partyEarring: {
     src: partyEarring,
     alt: "Smoky eye party makeup with orange lehenga and polki jewellery",
+    objectPosition: "50% 18%",
+  },
+  partySilverGown: {
+    src: partySilverGown,
+    alt: "Party glam with copper waves, sapphire necklace and a crystal gown",
+    objectPosition: "50% 18%",
+  },
+  partyPinkEmerald: {
+    src: partyPinkEmerald,
+    alt: "Party makeup with emerald jewellery, maang tikka and a pink embroidered blouse",
+    objectPosition: "50% 16%",
+  },
+  hairOmbreSalon: {
+    src: hairOmbreSalon,
+    alt: "Long ombre hair colour finished in the RBS Make-Over salon chair",
+    objectPosition: "50% 22%",
+  },
+  hairGoldBraid: {
+    src: hairGoldBraid,
+    alt: "Bridal braid wrapped in gold jewellery and finished with a shell and pearl paranda",
+    objectPosition: "50% 18%",
+  },
+  hairAuburnCurls: {
+    src: hairAuburnCurls,
+    alt: "Glossy auburn curls with pearl pins, styled at RBS Make-Over",
+    objectPosition: "50% 40%",
+  },
+  mensGroomingChair: {
+    src: mensGroomingChair,
+    alt: "Men's haircut and grooming in the RBS Make-Over chair",
     objectPosition: "50% 18%",
   },
   ownerPortrait: {
@@ -84,6 +162,11 @@ export const images: Record<string, SiteImage> = {
     src: ownerFull,
     alt: "Rachna Bhardwaj, professional makeup artist and founder of RBS Make-Over",
     objectPosition: "50% 10%",
+  },
+  ownerLogoWall: {
+    src: ownerLogoWall,
+    alt: "Rachna Bhardwaj in a Banarasi saree in front of the RBS Make-Over logo wall",
+    objectPosition: "50% 12%",
   },
   studioLogoWall: {
     src: studioLogoWall,
@@ -102,91 +185,85 @@ export const images: Record<string, SiteImage> = {
     alt: "Rachna Bhardwaj applying makeup to a client at RBS Make-Over studio",
     objectPosition: "40% 30%",
   },
+  studioMakeupSession: {
+    src: studioMakeupSession,
+    alt: "Rachna Bhardwaj finishing a bridal look in front of the RBS Make-Over logo wall",
+    objectPosition: "50% 20%",
+  },
+  studioGaneshBlessing: {
+    src: studioGaneshBlessing,
+    alt: "Rachna Bhardwaj with a bride holding a marigold-adorned Ganesh idol at the studio",
+    objectPosition: "50% 18%",
+  },
+  sittingConsult: {
+    src: sittingConsult,
+    alt: "Rachna Bhardwaj applying makeup to a client at the RBS Make-Over logo wall",
+    objectPosition: "50% 18%",
+  },
+  sittingTrial: {
+    src: sittingTrial,
+    alt: "Close-up of bridal eye makeup, lashes, nath and polki jewellery",
+    objectPosition: "50% 42%",
+  },
+  sittingTheDay: {
+    src: sittingTheDay,
+    alt: "Finished bridal look with gold-wrapped braid, nath and pink embroidered lehenga",
+    objectPosition: "50% 12%",
+  },
+  heroStudioEnsemble: {
+    src: heroStudioEnsemble,
+    alt: "Rachna Bhardwaj with bridal and party looks from RBS Make-Over",
+    objectPosition: "50% 42%",
+  },
+  heroStudioLineup: {
+    src: heroStudioLineup,
+    alt: "Rachna Bhardwaj with brides at RBS Make-Over studio",
+    objectPosition: "50% 45%",
+  },
+  beforeBridalBraid: {
+    src: beforeBridalBraid,
+    alt: "Client before bridal makeup",
+    objectPosition: "50% 18%",
+  },
+  afterBridalBraid: {
+    src: afterBridalBraid,
+    alt: "Bridal makeup with gold-wrapped braid, nath and polki jewellery",
+    objectPosition: "50% 12%",
+  },
+  beforeBridalMaroon: {
+    src: beforeBridalMaroon,
+    alt: "Client before bridal makeup at RBS Make-Over",
+    objectPosition: "50% 18%",
+  },
+  afterBridalMaroon: {
+    src: afterBridalMaroon,
+    alt: "Outdoor bridal portrait in maroon dupatta with kundan jewellery",
+    objectPosition: "50% 16%",
+  },
+  beforePartyEmerald: {
+    src: beforePartyEmerald,
+    alt: "Client before party makeup",
+    objectPosition: "50% 16%",
+  },
+  afterPartyEmerald: {
+    src: afterPartyEmerald,
+    alt: "Party makeup with emerald jewellery and a pink embroidered blouse",
+    objectPosition: "50% 16%",
+  },
+  beforePartySilver: {
+    src: beforePartySilver,
+    alt: "Client before hair colour and party glam",
+    objectPosition: "50% 18%",
+  },
+  afterPartySilver: {
+    src: afterPartySilver,
+    alt: "Party glam with copper waves and a crystal gown",
+    objectPosition: "50% 18%",
+  },
   logoSource: {
     src: logoSource,
     alt: "RBS Make-Over unisex makeup studio logo",
     objectPosition: "50% 50%",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockHairStyling: {
-    src: stockHairStyling,
-    alt: "Hair styling in a salon chair",
-    objectPosition: "50% 20%",
-    isStock: true,
-    credit: "Adam Winger / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/FkAZqQJTbXM",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockSalonInterior: {
-    src: stockSalonInterior,
-    alt: "Luxury salon interior with styling chairs",
-    objectPosition: "50% 50%",
-    isStock: true,
-    credit: "Adam Winger / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/M4R8iaqPVp8",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockHairWash: {
-    src: stockHairWash,
-    alt: "Hair wash and salon conversation",
-    objectPosition: "50% 20%",
-    isStock: true,
-    credit: "Adam Winger / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/WDmvpGs2060",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockMensGrooming: {
-    src: stockMensGrooming,
-    alt: "Men's beard grooming with clippers",
-    objectPosition: "50% 20%",
-    isStock: true,
-    credit: "Amanda Vick / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/rhjvSdEYlqg",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockMakeupBrushes: {
-    src: stockMakeupBrushes,
-    alt: "Makeup brushes on a warm-toned surface",
-    objectPosition: "50% 50%",
-    isStock: true,
-    credit: "Shamblen Studios / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/xwM61TPMlYk",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockMakeupProducts: {
-    src: stockMakeupProducts,
-    alt: "Assorted makeup products on a grey surface",
-    objectPosition: "50% 50%",
-    isStock: true,
-    credit: "Element5 Digital / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/ceWgSMd8rvQ",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockHairColor: {
-    src: stockHairColor,
-    alt: "Warm copper hair colour in motion",
-    objectPosition: "50% 30%",
-    isStock: true,
-    credit: "George Bohunicky / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/qJKT2rMU0VU",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockHairSalonCut: {
-    src: stockHairSalonCut,
-    alt: "Woman getting a haircut in a salon",
-    objectPosition: "50% 20%",
-    isStock: true,
-    credit: "Ionela Mat / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/VJ1GXgakFOs",
-  },
-  // REPLACE WITH CLIENT PHOTO
-  stockBrideUpdo: {
-    src: stockBrideUpdo,
-    alt: "Bridal hair styled in an elegant updo",
-    objectPosition: "50% 18%",
-    isStock: true,
-    credit: "Alexander Mass / Unsplash",
-    photographerUrl: "https://unsplash.com/photos/uXG_pkbauk8",
   },
 };
 
@@ -216,6 +293,22 @@ export const reels = [
     src: "/reels/client-love.mp4",
     title: "Client love",
   },
+  {
+    src: "/reels/makeup-in-chair.mp4",
+    title: "In the chair",
+  },
+  {
+    src: "/reels/studio-glam.mp4",
+    title: "Studio glam",
+  },
+  {
+    src: "/reels/bridal-closeup.mp4",
+    title: "Bridal close-up",
+  },
+  {
+    src: "/reels/look-complete.mp4",
+    title: "Look complete",
+  },
 ];
 
 export const hero = {
@@ -225,7 +318,7 @@ export const hero = {
     "Bridal HD and airbrush, party glam, hair and men's grooming — by Rachna Bhardwaj, certified at Chandni Singh Makeup Academy.",
   primaryCta: { href: "#contact", label: "Book your look" },
   secondaryCta: { href: "#gallery", label: "View the work" },
-  panels: [images.bridalChandelier, images.partyEarring, images.bridalPaisley],
+  panels: [images.heroStudioEnsemble, images.heroStudioLineup],
 };
 
 export const marqueeItems = [
@@ -241,7 +334,15 @@ export const marqueeItems = [
   "Chandni Singh certified",
 ];
 
-export const services = [
+export const services: Array<{
+  id: string;
+  number: string;
+  title: string;
+  price: string;
+  description: string;
+  images: SiteImage[];
+  bullets: string[];
+}> = [
   {
     id: "bridal",
     number: "01",
@@ -249,7 +350,12 @@ export const services = [
     price: "From ₹10,000",
     description:
       "HD, airbrush and celebrity bridal looks with hairdo, lashes and saree draping. Built for pheras, photographs and a long day of joy.",
-    image: images.bridalPaisley,
+    images: [
+      images.bridalYellowHenna,
+      images.bridalNeonSign,
+      images.bridalPaisley,
+      images.bridalChandelier,
+    ],
     bullets: ["Bridal HD", "Airbrush", "Celebrity finish", "Trial available"],
   },
   {
@@ -259,7 +365,12 @@ export const services = [
     price: "Ask for today's lookbook",
     description:
       "Smoky, shimmer and soft-glam makeup for receptions, engagements, festivals and nights that deserve a second glance.",
-    image: images.partyChinHand,
+    images: [
+      images.partyChinHand,
+      images.partyEarring,
+      images.partySilverGown,
+      images.partyPinkEmerald,
+    ],
     bullets: ["Reception", "Engagement", "Festive", "Soft glam"],
   },
   {
@@ -269,7 +380,11 @@ export const services = [
     price: "Cut · colour · style",
     description:
       "Cuts, colour, spa and occasion hair — from sleek updos to the kind of movement that photographs like silk.",
-    image: images.stockHairSalonCut, // REPLACE WITH CLIENT PHOTO
+    images: [
+      images.hairAuburnCurls,
+      images.hairGoldBraid,
+      images.hairOmbreSalon,
+    ],
     bullets: ["Cut & finish", "Colour", "Occasion hair", "Hair spa"],
   },
   {
@@ -279,7 +394,7 @@ export const services = [
     price: "Unisex studio",
     description:
       "Beard, cut and grooming for grooms, guests and everyday sharpness. A unisex studio, not an afterthought.",
-    image: images.stockMensGrooming, // REPLACE WITH CLIENT PHOTO
+    images: [images.mensGroomingChair],
     bullets: ["Haircut", "Beard", "Groom look", "Styling"],
   },
 ];
@@ -290,8 +405,8 @@ export const showcase = [
     number: "01",
     title: "Bridal",
     kicker: "Pheras, portraits, forever.",
-    copy: "Emerald, polki and red sequins against a face that still looks like you. Rachna's bridal work is built for close-ups — eyes, jewellery and skin in the same frame.",
-    images: [images.bridalChandelier, images.bridalPaisley],
+    copy: "Maroon, yellow, polki and a face that still looks like you. Rachna's bridal work is built for close-ups — eyes, jewellery and skin in the same frame.",
+    images: [images.bridalMaroonLilies, images.bridalYellowWithRachna],
   },
   {
     id: "party",
@@ -306,16 +421,8 @@ export const showcase = [
     number: "03",
     title: "Hair",
     kicker: "Colour, cut, occasion hair.",
-    copy: "A full hair desk sits beside the makeup chair. Swap this stock frame for Rachna's own colour and styling photos as soon as they arrive.",
-    images: [images.stockHairSalonCut, images.stockHairStyling], // REPLACE WITH CLIENT PHOTO
-  },
-  {
-    id: "mens",
-    number: "04",
-    title: "Men's grooming",
-    kicker: "Groom-ready. Everyday sharp.",
-    copy: "Beard, cut and a clean finish for the men in the wedding party — and for anyone who wants the unisex studio treatment.",
-    images: [images.stockMensGrooming, images.stockHairWash], // REPLACE WITH CLIENT PHOTO
+    copy: "Glossy auburn curls against the RBS Make-Over wall — colour and occasion hair that sits beside the makeup chair, not after it.",
+    images: [images.hairAuburnCurls, images.hairGoldBraid],
   },
 ];
 
@@ -325,31 +432,36 @@ export const about = {
   lead: "Founder of RBS Make-Over. Makeup artist, bridal specialist, and the pair of hands behind the pink face-line on the studio wall.",
   body: [
     "Rachna trained at Chandni Singh Makeup Academy and built a unisex studio around one idea: makeup should feel like you, only more luminous. Bridal HD and airbrush, party glam, hair and men's grooming all sit under the same roof.",
-    "The work on this site is hers — red lehengas, polki, smoky eyes, the cream-and-red Banarasi. The two behind-the-scenes frames are from her real studio, shot in front of the RBS Make-Over logo wall.",
+    "The work on this site is hers — lehengas, polki, smoky eyes, and the Banarasi on the logo wall. The chair, the mirror lights and the pink face-line are the same room you walk into.",
   ],
   certification: "Certified by Chandni Singh Makeup Academy",
   products:
     "MAC, Huda Beauty, Kryolan, Bobbi Brown, Chanel, Anastasia Beverly Hills, Sephora, Inglot and more.",
 };
 
-export const processSteps = [
+export const processSteps: Array<{
+  number: string;
+  title: string;
+  copy: string;
+  image?: SiteImage;
+}> = [
   {
     number: "01",
     title: "Consult",
     copy: "Share the outfit, the light, the hour you'll be seen. Rachna maps skin, jewellery and hair before a brush is lifted.",
-    image: images.studioLogoWall,
+    image: images.sittingConsult,
   },
   {
     number: "02",
     title: "Trial",
     copy: "A paid trial locks the brief — base, eyes, hairdo — so the event morning is calm, not experimental.",
-    image: images.studioMirror,
+    image: images.sittingTrial,
   },
   {
     number: "03",
     title: "The day",
     copy: "Studio or on-location. HD or airbrush. Lashes, draping and a last look in the mirror before you walk out.",
-    image: images.studioGlamorous,
+    image: images.sittingTheDay,
   },
 ];
 
@@ -372,7 +484,7 @@ export const whyUs = [
   },
 ];
 
-export const galleryFilters = ["All", "Bridal", "Party", "Studio"] as const;
+export const galleryFilters = ["All", "Bridal", "Party", "Hair", "Men's", "Studio"] as const;
 export type GalleryFilter = (typeof galleryFilters)[number];
 
 export const gallery = [
@@ -387,6 +499,31 @@ export const gallery = [
     category: "Bridal" as GalleryFilter,
   },
   {
+    id: "neon-sign",
+    image: images.bridalNeonSign,
+    category: "Bridal" as GalleryFilter,
+  },
+  {
+    id: "yellow-henna",
+    image: images.bridalYellowHenna,
+    category: "Bridal" as GalleryFilter,
+  },
+  {
+    id: "pink-braid",
+    image: images.bridalPinkBraid,
+    category: "Bridal" as GalleryFilter,
+  },
+  {
+    id: "outdoor-maroon",
+    image: images.bridalOutdoorMaroon,
+    category: "Bridal" as GalleryFilter,
+  },
+  {
+    id: "maroon-lilies",
+    image: images.bridalMaroonLilies,
+    category: "Bridal" as GalleryFilter,
+  },
+  {
     id: "chin-hand",
     image: images.partyChinHand,
     category: "Party" as GalleryFilter,
@@ -396,22 +533,73 @@ export const gallery = [
     image: images.partyEarring,
     category: "Party" as GalleryFilter,
   },
+  {
+    id: "silver-gown",
+    image: images.partySilverGown,
+    category: "Party" as GalleryFilter,
+  },
+  {
+    id: "pink-emerald",
+    image: images.partyPinkEmerald,
+    category: "Party" as GalleryFilter,
+  },
+  {
+    id: "auburn-curls",
+    image: images.hairAuburnCurls,
+    category: "Hair" as GalleryFilter,
+  },
+  {
+    id: "gold-braid",
+    image: images.hairGoldBraid,
+    category: "Hair" as GalleryFilter,
+  },
+  {
+    id: "ombre-salon",
+    image: images.hairOmbreSalon,
+    category: "Hair" as GalleryFilter,
+  },
+  {
+    id: "mens-chair",
+    image: images.mensGroomingChair,
+    category: "Men's" as GalleryFilter,
+  },
+  {
+    id: "glamorous",
+    image: images.studioGlamorous,
+    category: "Studio" as GalleryFilter,
+  },
+  {
+    id: "ganesh",
+    image: images.studioGaneshBlessing,
+    category: "Studio" as GalleryFilter,
+  },
 ];
 
-export const instagramTiles: Array<{
-  id: string;
-  image?: SiteImage;
-  placeholder?: boolean;
-}> = [
-  { id: "1", image: images.bridalChandelier },
-  { id: "2", image: images.bridalPaisley },
-  { id: "3", image: images.partyChinHand },
-  { id: "4", image: images.partyEarring },
-  { id: "5", placeholder: true },
-  { id: "6", placeholder: true },
-  { id: "7", placeholder: true },
-  { id: "8", placeholder: true },
-  { id: "9", placeholder: true },
+export const beforeAfter = [
+  {
+    id: "bridal-braid",
+    label: "Bridal HD",
+    before: images.beforeBridalBraid,
+    after: images.afterBridalBraid,
+  },
+  {
+    id: "bridal-maroon",
+    label: "Bridal lehenga",
+    before: images.beforeBridalMaroon,
+    after: images.afterBridalMaroon,
+  },
+  {
+    id: "party-emerald",
+    label: "Party glam",
+    before: images.beforePartyEmerald,
+    after: images.afterPartyEmerald,
+  },
+  {
+    id: "party-silver",
+    label: "Hair & evening",
+    before: images.beforePartySilver,
+    after: images.afterPartySilver,
+  },
 ];
 
 export const testimonials = [
@@ -419,22 +607,16 @@ export const testimonials = [
     quote:
       "I looked like myself, only more luminous. The jewellery and the eyes sat in the same photograph — nothing fought for attention.",
     name: "A bridal client",
-    meta: "Placeholder note — replace with a real review",
-    isPlaceholder: true,
   },
   {
     quote:
       "Party makeup that lasted the whole reception. Smoky, warm, and still comfortable by the last dance.",
     name: "A party booking",
-    meta: "Placeholder note — replace with a real review",
-    isPlaceholder: true,
   },
   {
     quote:
       "The studio wall, the chair, the calm. It felt like a real house of makeup, not a kit arriving at the door.",
     name: "A studio visit",
-    meta: "Placeholder note — replace with a real review",
-    isPlaceholder: true,
   },
 ];
 

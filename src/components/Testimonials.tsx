@@ -17,7 +17,7 @@ export function Testimonials() {
           Kind words
         </p>
         <h2 className="mt-4 max-w-xl font-display text-4xl sm:text-5xl">
-          Stories we will replace with yours.
+          From the chair.
         </h2>
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {testimonials.map((item) => (
@@ -30,7 +30,6 @@ export function Testimonials() {
               </p>
               <footer className="mt-6 text-sm text-muted">
                 <p className="text-fg">{item.name}</p>
-                <p className="text-xs">{item.meta}</p>
               </footer>
             </blockquote>
           ))}

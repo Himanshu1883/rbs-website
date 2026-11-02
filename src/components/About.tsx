@@ -18,9 +18,9 @@ export function About() {
             style={{ maxWidth: 340 }}
           >
             <PortraitImage
-              image={images.studioLogoWall}
+              image={images.studioMakeupSession}
               sizes="340px"
-              className="aspect-[338/464] rounded-xl"
+              className="aspect-[3/4] rounded-xl"
             />
           </div>
           <RotatingBadge className="absolute -right-3 -top-6 h-28 w-28 text-fg sm:-right-8 sm:h-36 sm:w-36" />

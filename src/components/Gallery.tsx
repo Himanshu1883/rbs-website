@@ -29,7 +29,7 @@ export function Gallery() {
             gold
             eyebrow="Our work"
             title="The real portfolio."
-            copy="Four of Rachna's own photographs. Stock never sits here. The grid is ready to grow to thirty."
+            copy="Bridal, party, hair and studio days — photographed at RBS Make-Over."
           />
           <div className="flex flex-wrap gap-2">
             {galleryFilters.map((chip) => (
@@ -68,16 +68,6 @@ export function Gallery() {
               />
             </button>
           ))}
-          <div className="mb-4 break-inside-avoid rounded-2xl border border-dashed border-line bg-bg p-8">
-            <p className="text-[11px] uppercase tracking-[0.3em] text-pink">
-              Studio
-            </p>
-            <p className="mt-3 font-display text-3xl italic">More work coming</p>
-            <p className="mt-3 text-sm leading-6 text-muted">
-              Hair, men&apos;s grooming and extra bridal frames will land here —
-              never stock.
-            </p>
-          </div>
         </div>
       </div>
 

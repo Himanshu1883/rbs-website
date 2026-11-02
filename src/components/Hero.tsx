@@ -4,68 +4,39 @@ import { useEffect, useState } from "react";
 import { PortraitImage } from "@/components/PortraitImage";
 import { hero, site } from "@/content/content";
 
-const kenburns = ["kenburns-a", "kenburns-b", "kenburns-c"] as const;
-
 export function Hero() {
   const [index, setIndex] = useState(0);
-  const [desktop, setDesktop] = useState(true);
 
   useEffect(() => {
-    const mq = window.matchMedia("(min-width: 768px)");
-    const update = () => setDesktop(mq.matches);
-    update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
-  }, []);
-
-  useEffect(() => {
-    if (desktop) return;
     const id = window.setInterval(() => {
       setIndex((n) => (n + 1) % hero.panels.length);
     }, 5200);
     return () => window.clearInterval(id);
-  }, [desktop]);
+  }, []);
 
   return (
     <section
       id="top"
       className="relative isolate h-[88svh] min-h-[34rem] overflow-hidden bg-black text-white"
     >
-      {desktop ? (
-        <div className="absolute inset-0 grid grid-cols-3">
-          {hero.panels.map((image, i) => (
-            <div key={image.alt} className="relative overflow-hidden">
-              <PortraitImage
-                image={image}
-                sizes="33vw"
-                priority={i === 0}
-                imgClassName={`will-change-transform ${kenburns[i]}`}
-              />
-            </div>
-          ))}
+      {hero.panels.map((image, i) => (
+        <div
+          key={image.alt}
+          className={`absolute inset-0 transition-opacity duration-700 ${
+            i === index ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <PortraitImage
+            image={image}
+            sizes="100vw"
+            priority={i === 0}
+            imgClassName="kenburns-hero"
+          />
         </div>
-      ) : (
-        <div className="absolute inset-0">
-          {hero.panels.map((image, i) => (
-            <div
-              key={image.alt}
-              className={`absolute inset-0 transition-opacity duration-700 ${
-                i === index ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              <PortraitImage
-                image={image}
-                sizes="100vw"
-                priority={i === 0}
-                imgClassName="kenburns-a"
-              />
-            </div>
-          ))}
-        </div>
-      )}
+      ))}
 
-      <div className="film-grain pointer-events-none absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-black/20" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/25 to-transparent" />
+      <div className="film-grain pointer-events-none absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-black/10" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-14">
         <p className="mb-4 text-[11px] uppercase tracking-[0.42em] text-gold">
@@ -95,7 +66,7 @@ export function Hero() {
           {site.owner} · {site.location} · {site.instagramHandle}
         </p>
 
-        <div className="mt-6 flex gap-2 md:hidden">
+        <div className="mt-6 flex gap-2">
           {hero.panels.map((image, i) => (
             <button
               key={image.alt}

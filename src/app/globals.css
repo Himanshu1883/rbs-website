@@ -97,6 +97,19 @@ body {
   animation: kenburns-c 24s ease-in-out infinite alternate;
 }
 
+@keyframes kenburns-hero {
+  0% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.kenburns-hero {
+  animation: kenburns-hero 18s ease-in-out infinite alternate;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

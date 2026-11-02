@@ -7,7 +7,7 @@ export function Showcase() {
       {showcase.map((chapter) => (
         <article
           key={chapter.id}
-          className="grid border-b border-line lg:grid-cols-[minmax(16rem,0.7fr)_1.3fr]"
+          className="grid overflow-hidden border-b border-line lg:h-[100svh] lg:grid-cols-[minmax(16rem,0.38fr)_1.62fr]"
         >
           <div className="flex flex-col justify-center px-4 py-8 sm:px-8 lg:py-10">
             <p className="font-display text-4xl text-gold/80">{chapter.number}</p>
@@ -22,18 +22,20 @@ export function Showcase() {
               {chapter.copy}
             </p>
           </div>
-          <div className="grid sm:grid-cols-2">
+          <div
+            className={`grid min-h-[22rem] lg:h-full lg:min-h-0 ${
+              chapter.images.length > 1 ? "grid-cols-2" : ""
+            }`}
+          >
             {chapter.images.map((image, i) => (
-              <div key={`${chapter.id}-${i}`} className="relative aspect-[3/4] bg-black">
+              <div
+                key={`${chapter.id}-${i}`}
+                className="relative h-full min-h-[22rem] bg-black lg:min-h-0"
+              >
                 <PortraitImage
                   image={image}
-                  sizes="(min-width: 1024px) 32vw, 100vw"
+                  sizes="(min-width: 1024px) 32vw, 50vw"
                 />
-                {image.isStock ? (
-                  <span className="absolute bottom-3 left-3 rounded-full bg-black/55 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-white/80">
-                    Photo: Unsplash
-                  </span>
-                ) : null}
               </div>
             ))}
           </div>

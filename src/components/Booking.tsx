@@ -26,13 +26,12 @@ export function Booking() {
   return (
     <section id="contact" className="bg-bg-2 px-4 py-14 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl overflow-hidden rounded-[1.8rem] lg:grid-cols-2">
-        <div className="relative h-[32rem] bg-black lg:h-full">
+        <div className="relative h-[32rem] bg-black lg:min-h-full">
           <PortraitImage
-            image={images.bridalChandelier}
-            sizes="50vw"
-            priority={false}
+            image={images.ownerLogoWall}
+            sizes="(min-width: 1024px) 50vw, 100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#E6007E]/80 via-black/40 to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/10" />
           <FaceLine className="absolute left-8 top-10 w-40 opacity-90 sm:w-56" color="#fff" />
           <div className="absolute bottom-8 left-8 right-8 text-white">
             <p className="text-[11px] uppercase tracking-[0.32em] text-gold">
@@ -108,7 +107,7 @@ export function Booking() {
             <a href={site.phoneHref} className="text-pink">
               {site.phone}
             </a>
-            . Number sourced from a public listing — please verify.
+            .
           </p>
         </form>
       </div>
