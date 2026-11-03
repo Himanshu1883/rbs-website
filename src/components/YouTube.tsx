@@ -41,8 +41,10 @@ export function YouTube() {
                     src={short.thumbnail}
                     alt=""
                     fill
-                    sizes="17vw"
-                    className="object-cover transition duration-700 group-hover:scale-105"
+                    unoptimized
+                    quality={100}
+                    sizes="20vw"
+                    className="object-cover object-[50%_20%] transition duration-700 group-hover:scale-105"
                   />
                 </div>
               ))}
@@ -54,6 +56,8 @@ export function YouTube() {
                   src="/youtube/channel-avatar.jpg"
                   alt={site.owner}
                   fill
+                  unoptimized
+                  quality={100}
                   sizes="80px"
                   className="object-cover object-[50%_20%]"
                 />
@@ -80,19 +84,25 @@ export function YouTube() {
               href={short.href}
               target="_blank"
               rel="noreferrer"
-              className="group relative w-[min(42vw,11rem)] shrink-0 snap-center overflow-hidden rounded-2xl bg-black shadow-xl sm:w-auto"
+              className="group relative w-[min(48vw,14rem)] shrink-0 snap-center overflow-hidden rounded-2xl bg-black shadow-xl sm:w-auto"
             >
               <div className="relative aspect-[9/16]">
                 <Image
                   src={short.thumbnail}
                   alt={short.title}
                   fill
-                  sizes="(min-width: 1024px) 14vw, 42vw"
-                  className="object-cover transition duration-500 group-hover:scale-105"
+                  unoptimized
+                  quality={100}
+                  sizes="(min-width: 1024px) 16vw, 48vw"
+                  className="object-cover object-[50%_18%] transition duration-500 group-hover:scale-[1.03]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
-                <div className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#FF0000] text-white shadow-lg transition group-hover:scale-110">
-                  <svg viewBox="0 0 24 24" className="ml-0.5 h-4 w-4 fill-current" aria-hidden>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/15" />
+                <div className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#FF0000] text-white shadow-lg transition group-hover:scale-110">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="ml-0.5 h-5 w-5 fill-current"
+                    aria-hidden
+                  >
                     <path d="M8 5v14l11-7z" />
                   </svg>
                 </div>
@@ -100,7 +110,7 @@ export function YouTube() {
                   Short
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-3">
-                  <p className="line-clamp-2 text-xs font-medium leading-snug text-white">
+                  <p className="line-clamp-2 text-xs font-medium leading-snug text-white sm:text-sm">
                     {short.title}
                   </p>
                   <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-white/65">
