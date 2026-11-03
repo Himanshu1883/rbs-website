@@ -11,6 +11,7 @@ import { Services } from "@/components/Services";
 import { Showcase } from "@/components/Showcase";
 import { Testimonials } from "@/components/Testimonials";
 import { WhyUs } from "@/components/WhyUs";
+import { YouTube } from "@/components/YouTube";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <Instagram />
+      <YouTube />
       <Services />
       <Showcase />
       <About />

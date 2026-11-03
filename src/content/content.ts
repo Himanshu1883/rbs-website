@@ -67,6 +67,10 @@ export const site = {
   instagram: "https://www.instagram.com/rbsmakeoverstudio/",
   instagramHandle: "@rbsmakeoverstudio",
   instagramFollowers: "2,500+",
+  youtube: "https://www.youtube.com/@rachnabhardwaj77",
+  youtubeHandle: "@rachnabhardwaj77",
+  youtubeChannelName: "Rachna's Skin Care and Beauty Classes",
+  youtubeShorts: "https://www.youtube.com/@rachnabhardwaj77/shorts",
   email: "",
   accent: "#E6007E",
   gold: "#C9A24B",
@@ -273,7 +277,53 @@ export const nav = [
   { href: "#about", label: "About" },
   { href: "#gallery", label: "Gallery" },
   { href: "#instagram", label: "Reels" },
+  { href: "#youtube", label: "YouTube" },
   { href: "#contact", label: "Book" },
+];
+
+export const youtubeShorts = [
+  {
+    id: "-6VMgn8Apfo",
+    title: "From Makeup Chair to Bridal Queen",
+    views: "1.1K views",
+    thumbnail: "/youtube/short-1.jpg",
+    href: "https://www.youtube.com/shorts/-6VMgn8Apfo",
+  },
+  {
+    id: "tSqdY7M9sBs",
+    title: "Karwa Chauth Special Glam Look",
+    views: "85 views",
+    thumbnail: "/youtube/short-2.jpg",
+    href: "https://www.youtube.com/shorts/tSqdY7M9sBs",
+  },
+  {
+    id: "YhlBuEyPagY",
+    title: "From Simple to Stunning Glam",
+    views: "29 views",
+    thumbnail: "/youtube/short-3.jpg",
+    href: "https://www.youtube.com/shorts/YhlBuEyPagY",
+  },
+  {
+    id: "_rfTo4u7h0o",
+    title: "Bridal Look Goals",
+    views: "1.1K views",
+    thumbnail: "/youtube/short-4.jpg",
+    href: "https://www.youtube.com/shorts/_rfTo4u7h0o",
+  },
+  {
+    id: "9sunFESS0BY",
+    title: "HD Bridal Makeup Transformation",
+    views: "166 views",
+    thumbnail: "/youtube/short-5.jpg",
+    href: "https://www.youtube.com/shorts/9sunFESS0BY",
+  },
+  {
+    id: "TSWlLFdLCdQ",
+    title: "Stunning Pink Bridal Makeup",
+    views: "1.1K views",
+    thumbnail: "/youtube/short-6.jpg",
+    href: "https://www.youtube.com/shorts/TSWlLFdLCdQ",
+  },
 ];
 
 export const reels = [

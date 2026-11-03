@@ -16,9 +16,14 @@ export function Footer() {
         <div className="text-sm text-muted">
           <p>{site.owner}</p>
           <p>{site.location} · {site.hours}</p>
-          <a href={site.instagram} className="text-pink" target="_blank" rel="noreferrer">
-            {site.instagramHandle}
-          </a>
+          <p className="mt-1 flex flex-col gap-1">
+            <a href={site.instagram} className="text-pink" target="_blank" rel="noreferrer">
+              {site.instagramHandle}
+            </a>
+            <a href={site.youtube} className="text-pink" target="_blank" rel="noreferrer">
+              {site.youtubeHandle}
+            </a>
+          </p>
         </div>
       </div>
       <div className="mx-auto mt-12 max-w-7xl border-t border-line pt-6 text-xs text-muted">
